@@ -2,26 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sample Product</title>
+  <title>Wireless Headphones</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    .product { max-width: 400px; }
-    img { width: 100%; border-radius: 8px; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 420px;
+      padding: 20px;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h1 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 12px;
+    }
+
+    .features {
+      margin-bottom: 15px;
+    }
+
+    .features li {
+      margin-bottom: 6px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .reviews {
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+    }
+
+    .review {
+      margin-bottom: 15px;
+    }
+
+    .review strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+
+    .stars {
+      color: #ffc107;
+      font-size: 14px;
+    }
+
+    .review p {
+      font-size: 13px;
+      color: #444;
+      margin: 4px 0 0;
+    }
   </style>
 </head>
 <body>
-  <div class="product">
+  <div class="product-card">
+    <img src="headphones.png" alt="Wireless Headphones">
     <h1>Wireless Headphones</h1>
-    <p><strong>Price:</strong> ₹2,999</p>
-    <img src="Headphones.png" alt="Headphones">
+    <p class="price">₹2,999</p>
+
     <h3>Features:</h3>
-    <ul>
+    <ul class="features">
       <li>Bluetooth 5.0</li>
-      <li>20 Hours Battery</li>
-      <li>Noise Cancellation</li>
+      <li>20 Hours Battery Life</li>
+      <li>Active Noise Cancellation</li>
+      <li>Comfortable Over-Ear Design</li>
     </ul>
-    <p>Experience crystal-clear sound and comfort with our wireless headphones.</p>
+
+    <p class="description">
+      Experience crystal-clear sound and ultimate comfort with our latest wireless headphones. 
+      Perfect for music, gaming, or work calls.
+    </p>
+
+    <div class="reviews">
+      <h3>Customer Reviews</h3>
+
+      <div class="review">
+        <strong>Praneeth</strong>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>Amazing sound quality! Battery easily lasts a full day.</p>
+      </div>
+
+      <div class="review">
+        <strong>Rohit</strong>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <p>Noise cancellation is really good. Just wish it folded for travel.</p>
+      </div>
+
+      <div class="review">
+        <strong>Ananya</strong>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p>Super comfy to wear. Worth every rupee!</p>
+      </div>
+
+      <div class="review">
+        <strong>Kiran</strong>
+        <div class="stars">⭐⭐⭐</div>
+        <p>Decent headphones, but bass could be better.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
-
